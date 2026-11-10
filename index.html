@@ -10,13 +10,28 @@
 
     <section class="hero-section">
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/ZQvQkQP77g0?autoplay=1&mute=1&loop=1&playlist=ZQvQkQP77g0&controls=0&showinfo=0&rel=0&iv_load_policy=3&disablekb=1" title="Відео підтримки" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video class="hero-video" src="videoplayback.mp4" autoplay muted loop playsinline></video>
+            <div class="video-shield"></div>
+            <div class="video-loader-plug"></div>
         </div>
+
         <div class="video-overlay"></div>
         <div class="hero-content">
+            <div class="hero-emblem">
+                <svg viewBox="0 0 80 132" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-label="Тризуб">
+                    <path d="M40 18V122"></path>
+                    <path d="M40 64C22 64 12 54 12 36V20"></path>
+                    <path d="M40 64C58 64 68 54 68 36V20"></path>
+                    <path d="M29 72H51"></path>
+                    <path d="M40 2L47 20L40 16L33 20Z" fill="currentColor" stroke-width="1"></path>
+                    <path d="M12 4L19 22L12 18L5 22Z" fill="currentColor" stroke-width="1"></path>
+                    <path d="M68 4L75 22L68 18L61 22Z" fill="currentColor" stroke-width="1"></path>
+                    <path d="M36 120L40 130L44 120Z" fill="currentColor" stroke-width="1"></path>
+                </svg>
+            </div>
             <h1>ВОЛОНТЕРСТВО ТА ДОБРІ СПРАВИ В УКРАЇНІ</h1>
             <p>Сила єднання заради майбутнього нашої країни</p>
-            
+
             <a href="#main-content" class="scroll-down-btn">
                 <span>ПЕРЕЙТИ ДО ПРОЕКТІВ</span>
                 <div class="scroll-arrow-icon">↓</div>
@@ -27,23 +42,47 @@
     </section>
 
     <div id="main-content" class="about-project-section">
-        
-        <!-- Боковые фиксированные фотопанели -->
-        <div class="side-image left-side-img"></div>
-        <div class="side-image right-side-img"></div>
+
+        <div class="wheat-bg">
+            <div class="wheat-layer wheat-back"></div>
+            <div class="wheat-layer wheat-front"></div>
+        </div>
+
+        <div class="side-image left-side-img">
+            <img src="b7m7uj---c1250x656x0sx23s--9a4e9109241ed51bf35db91b000b8a39.jpg" class="slide" style="--i:0; --dir:1;">
+            <img src="Картинка-волонтерство.jpg" class="slide" style="--i:1; --dir:1;">
+        </div>
+
+        <div class="side-image right-side-img">
+            <img src="434002153.png" class="slide" style="--i:0; --dir:-1;">
+            <img src="4340021.png" class="slide" style="--i:1; --dir:-1;">
+        </div>
 
         <div class="choice-container">
             <a href="civilian.html" class="choice-card civilian">
                 <div class="card-badge">ЦИВІЛЬНА ДОПОМОГА</div>
-                <div class="choice-icon">🤝</div>
+                <div class="choice-icon-circle">
+                    <svg class="choice-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
                 <h2>Цивільні громадяни</h2>
                 <p>Гуманітарні місії, житло, ліки, підтримка дітям та притулкам тварин</p>
                 <span class="btn-choice">ДОПОМОГТИ ЦИВІЛЬНИМ →</span>
             </a>
-
             <a href="military.html" class="choice-card military">
                 <div class="card-badge gold">ВОЄННА ПІДТРИМКА</div>
-                <div class="choice-icon">🪖</div>
+                <div class="choice-icon-circle gold-theme">
+                    <svg class="choice-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="10" width="6" height="4" rx="1.5"></rect>
+                        <path d="M9.5 10.5L6.4 7.4M14.5 10.5l3.1-3.1M9.5 13.5l-3.1 3.1M14.5 13.5l3.1 3.1"></path>
+                        <circle cx="5" cy="6" r="2"></circle>
+                        <circle cx="19" cy="6" r="2"></circle>
+                        <circle cx="5" cy="18" r="2"></circle>
+                        <circle cx="19" cy="18" r="2"></circle>
+                    </svg>
+                </div>
                 <h2>Збройні Сили (ЗСУ)</h2>
                 <p>Дрони, техніка, амуніція, авто та спецзасоби для наших Захисників</p>
                 <span class="btn-choice gold">ПІДТРИМАТИ ЗСУ →</span>
@@ -55,10 +94,19 @@
             <p class="project-mission">«Сила єднання заради майбутнього України» — це незалежна платформа, яка об'єднує небайдужих людей навколо допомоги цивільним громадянам, які постраждали від війни, та нашим військовим на передовій.</p>
         </div>
 
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+            <defs>
+                <linearGradient id="uaGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#00bfff"/>
+                    <stop offset="100%" stop-color="#ffd700"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
         <div class="trust-features-grid">
             <div class="trust-box">
                 <div class="trust-icon-wrapper">
-                    <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                         <polyline points="14 2 14 8 20 8"></polyline>
                         <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -70,8 +118,8 @@
             </div>
 
             <div class="trust-box">
-                <div class="trust-icon-wrapper gold-theme">
-                    <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="trust-icon-wrapper">
+                    <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         <polyline points="9 12 11 14 15 10"></polyline>
                     </svg>
@@ -82,7 +130,7 @@
 
             <div class="trust-box">
                 <div class="trust-icon-wrapper">
-                    <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <rect x="1" y="3" width="15" height="13"></rect>
                         <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
                         <circle cx="5.5" cy="18.5" r="2.5"></circle>
@@ -110,8 +158,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
-
 </body>
 </html>
