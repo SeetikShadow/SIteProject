@@ -19,7 +19,6 @@
     </header>
 
     <div class="news-ticker">
-        <div class="ticker-label">НОВИНИ ЗСУ</div>
         <div class="ticker-window">
             <div class="ticker-track">
                 <div class="ticker-group">
@@ -47,6 +46,23 @@
         <div class="wheat-bg">
             <div class="wheat-layer wheat-back"></div>
             <div class="wheat-layer wheat-front"></div>
+        </div>
+
+        <div class="scene">
+            <div class="drone d1"></div>
+            <div class="drone d2"></div>
+            <div class="drone d3"></div>
+
+            <!-- Гуманітарні вантажі: клік по ящику відкриває його (чистий CSS, чекбокс + label) -->
+            <input type="checkbox" id="crate1" class="crate-toggle" aria-label="Відкрити гуманітарний вантаж">
+            <label class="cargo c1" for="crate1" title="Натисни, щоб відкрити">
+                <span class="meme" style="background-image:url('img/meme-1.jpg');"></span>
+            </label>
+
+            <input type="checkbox" id="crate2" class="crate-toggle" aria-label="Відкрити гуманітарний вантаж">
+            <label class="cargo c2" for="crate2" title="Натисни, щоб відкрити">
+                <span class="meme" style="background-image:url('img/meme-2.jpg');"></span>
+            </label>
         </div>
 
         <div class="page-content">
@@ -168,6 +184,97 @@
             </section>
         </div>
     </main>
+
+    <footer class="mf">
+    <svg class="mf-scene" viewBox="0 0 1600 340" aria-hidden="true">
+<defs>
+<g id="mfba"><rect width="76" height="34" rx="15" fill="#7a6330"/><path d="M10 9Q38 2 66 9" stroke="#a68a4a" stroke-width="2" fill="none"/><path d="M6 26Q38 31 70 26" stroke="#4f3f1b" stroke-width="2" fill="none" opacity=".7"/></g>
+<g id="mfbb"><rect width="76" height="34" rx="15" fill="#6a5528"/><path d="M10 9Q38 2 66 9" stroke="#957b3f" stroke-width="2" fill="none"/><path d="M6 26Q38 31 70 26" stroke="#463817" stroke-width="2" fill="none" opacity=".7"/></g>
+<linearGradient id="mfbeam" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="-230"><stop offset="0" stop-color="#fffbe0" stop-opacity=".55"/><stop offset="1" stop-color="#fffbe0" stop-opacity="0"/></linearGradient>
+</defs>
+<g transform="translate(1022 92)"><g class="mf-beam b1"><polygon points="0,0 -38,-230 38,-230" fill="url(#mfbeam)"/></g></g>
+<g transform="translate(1098 92)"><g class="mf-beam b2"><polygon points="0,0 -38,-230 38,-230" fill="url(#mfbeam)"/></g></g>
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M1030 300L1042 112M1090 300L1078 112M1036 262L1084 206M1084 262L1036 206M1034 232L1086 176M1086 232L1034 176" stroke="#1d2a18" stroke-width="5" fill="none"/>
+<rect x="1026" y="68" width="68" height="44" fill="#26361f"/><path d="M1016 70L1060 44L1104 70Z" fill="#1d2a18"/>
+<rect x="1036" y="80" width="48" height="14" fill="#e8d98a" opacity=".85"/>
+<rect x="1012" y="86" width="14" height="12" rx="2" fill="#16210f"/><rect x="1094" y="86" width="14" height="12" rx="2" fill="#16210f"/>
+<circle cx="1019" cy="92" r="3" fill="#fff6b0"/><circle cx="1101" cy="92" r="3" fill="#fff6b0"/>
+</g>
+<g stroke-linejoin="round">
+<rect x="170" y="228" width="124" height="24" fill="#2c3a22"/>
+<polygon points="290,226 300,198 345,190 385,190 402,214 424,226 424,252 290,252" fill="#34452a"/>
+<polygon points="312,200 372,197 390,216 312,216" fill="#a9c3b0" opacity=".55"/>
+<path d="M342 198V216" stroke="#34452a" stroke-width="3"/>
+<circle cx="418" cy="238" r="5" fill="#fff0a0" opacity=".9"/>
+<path d="M200 226V176" stroke="#1d2a18" stroke-width="2"/><rect x="200" y="176" width="14" height="5" fill="#2a64b8"/><rect x="200" y="181" width="14" height="5" fill="#f2c200"/>
+</g>
+<g transform="translate(1400 230) scale(1.25) translate(-1400 -230)" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1390 140L1362 120" stroke="#4a5a34" stroke-width="12" fill="none"/>
+<path d="M1372 146Q1400 134 1428 146L1434 220H1366Z" fill="#4a5a34"/>
+<rect x="1382" y="152" width="40" height="34" rx="4" fill="#2f3b22"/>
+<path d="M1412 160L1322 84" stroke="#1b1b16" stroke-width="7" fill="none"/>
+<path d="M1370 126L1396 148" stroke="#1b1b16" stroke-width="5" fill="none"/>
+<circle cx="1362" cy="120" r="6" fill="#d9b48f"/>
+<circle cx="1402" cy="124" r="14" fill="#d9b48f"/>
+<path d="M1384 122C1384 100 1420 100 1420 122Z" fill="#3d4a2b"/><rect x="1380" y="119" width="44" height="5" rx="2" fill="#2f3b22"/>
+<g class="mf-flash"><polygon points="1316,80 1326,70 1324,82 1336,86 1324,90 1322,100 1314,90 1302,92 1310,84 1302,76" fill="#fff3a0" stroke="#ff9a1f" stroke-width="2"/></g>
+<path class="mf-tracer" d="M1312 78L1196 -50" stroke="#fff1a0" stroke-width="3.5" fill="none" pathLength="100" stroke-dasharray="12 200"/>
+</g>
+<g transform="translate(800 279) rotate(-9) scale(1.3)">
+<ellipse cx="0" cy="2" rx="28" ry="25" fill="#d8d0b4"/>
+<rect x="-14" y="16" width="28" height="18" rx="5" fill="#cfc6a6"/>
+<path d="M-8 20V32M0 20V33M8 20V32" stroke="#3b3320" stroke-width="2"/>
+<ellipse cx="-10" cy="6" rx="7" ry="8" fill="#2a2314"/><ellipse cx="10" cy="6" rx="7" ry="8" fill="#2a2314"/>
+<path d="M-3 16L0 10L3 16Z" fill="#3b3320"/>
+<path d="M-33 -2C-36 -46 36 -46 33 -2Q0 -9 -33 -2Z" fill="#556b3a"/>
+<path d="M-33 -2Q0 -9 33 -2" stroke="#2f3b22" stroke-width="3" fill="none"/>
+<path d="M-9 -34H9L-9 -17H9" stroke="#f4f2e4" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M0 304Q200 296 400 303T800 301T1200 303T1600 300V340H0Z" fill="#2a1d05"/>
+<path d="M0 304Q200 296 400 303T800 301T1200 303T1600 300" stroke="#4a3508" stroke-width="3" fill="none"/>
+<path d='M690 301l-4-14M690 301l1-18M690 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/><path d='M712 301l-4-14M712 301l1-18M712 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/><path d='M745 301l-4-14M745 301l1-18M745 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/><path d='M860 301l-4-14M860 301l1-18M860 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/><path d='M884 301l-4-14M884 301l1-18M884 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/><path d='M915 301l-4-14M915 301l1-18M915 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/><path d='M955 301l-4-14M955 301l1-18M955 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/><path d='M930 301l-4-14M930 301l1-18M930 301l5-13' stroke='#4d6a2a' stroke-width='2.4' stroke-linecap='round'/>
+<rect x='-10' y='290' width='650' height='24' fill='#2a1d05'/><rect x='960' y='290' width='660' height='24' fill='#2a1d05'/>
+<use href='#mfba' transform='translate(-30 277) rotate(-3.5 38 17)'/><use href='#mfbb' transform='translate(48 275) rotate(0.4 38 17)'/><use href='#mfba' transform='translate(124 275) rotate(0.1 38 17)'/><use href='#mfbb' transform='translate(198 278) rotate(-4.3 38 17)'/><use href='#mfba' transform='translate(273 278) rotate(3.3 38 17)'/><use href='#mfbb' transform='translate(348 276) rotate(1.3 38 17)'/><use href='#mfba' transform='translate(427 278) rotate(-1.0 38 17)'/><use href='#mfbb' transform='translate(507 275) rotate(3.6 38 17)'/><use href='#mfba' transform='translate(583 276) rotate(-3.8 38 17)'/><use href='#mfbb' transform='translate(8 250) rotate(-3.2 38 17)'/><use href='#mfba' transform='translate(85 249) rotate(-1.3 38 17)'/><use href='#mfbb' transform='translate(163 245) rotate(-4.4 38 17)'/><use href='#mfba' transform='translate(238 249) rotate(-0.7 38 17)'/><use href='#mfbb' transform='translate(314 249) rotate(-0.5 38 17)'/><use href='#mfba' transform='translate(390 250) rotate(2.0 38 17)'/><use href='#mfbb' transform='translate(465 248) rotate(0.3 38 17)'/><use href='#mfba' transform='translate(-30 219) rotate(-2.1 38 17)'/><use href='#mfbb' transform='translate(50 216) rotate(-0.8 38 17)'/><use href='#mfba' transform='translate(128 216) rotate(-0.1 38 17)'/><use href='#mfba' transform='translate(950 279) rotate(2.6 38 17)'/><use href='#mfbb' transform='translate(1027 280) rotate(-1.9 38 17)'/><use href='#mfba' transform='translate(1106 279) rotate(0.8 38 17)'/><use href='#mfbb' transform='translate(1182 280) rotate(4.4 38 17)'/><use href='#mfba' transform='translate(1259 279) rotate(-4.4 38 17)'/><use href='#mfbb' transform='translate(1337 279) rotate(4.9 38 17)'/><use href='#mfba' transform='translate(1416 277) rotate(-1.1 38 17)'/><use href='#mfbb' transform='translate(1494 275) rotate(-0.4 38 17)'/><use href='#mfba' transform='translate(1569 276) rotate(-4.4 38 17)'/><use href='#mfbb' transform='translate(1068 246) rotate(-2.5 38 17)'/><use href='#mfba' transform='translate(1144 250) rotate(-4.2 38 17)'/><use href='#mfbb' transform='translate(1221 248) rotate(3.8 38 17)'/><use href='#mfba' transform='translate(1300 250) rotate(-2.2 38 17)'/><use href='#mfbb' transform='translate(1376 247) rotate(3.8 38 17)'/><use href='#mfba' transform='translate(1456 246) rotate(-3.2 38 17)'/><use href='#mfbb' transform='translate(1532 246) rotate(-0.2 38 17)'/><use href='#mfba' transform='translate(1609 247) rotate(-5.0 38 17)'/><use href='#mfba' transform='translate(1180 217) rotate(0.7 38 17)'/><use href='#mfbb' transform='translate(1260 219) rotate(0.2 38 17)'/><use href='#mfba' transform='translate(1337 219) rotate(-4.5 38 17)'/><use href='#mfbb' transform='translate(1417 220) rotate(3.7 38 17)'/><use href='#mfba' transform='translate(1496 217) rotate(-1.0 38 17)'/><use href='#mfbb' transform='translate(1570 219) rotate(-4.4 38 17)'/><use href='#mfba' transform='translate(655 282) rotate(14 38 17)'/><use href='#mfbb' transform='translate(940 286) rotate(-16 38 17)'/><use href='#mfba' transform='translate(535 250) rotate(11 38 17)'/><use href='#mfbb' transform='translate(1032 246) rotate(-10 38 17)'/>
+</svg>
+    <div class="mf-body">
+        <div class="mf-grid">
+            <div class="mf-col">
+                <h3>Дбаємо разом</h3>
+                <p>Ми тримаємо тил, щоб вони тримали фронт. Кожен донат — це крок до спільної Перемоги.</p>
+                <span class="mf-tag">НЕЗАЛЕЖНА ВОЛОНТЕРСЬКА ІНІЦІАТИВА</span>
+            </div>
+            <div class="mf-col">
+                <h4>Контакти</h4>
+                <p>📧 support@volunteers-ua.org</p>
+                <p>📞 +38 (0800) 123-45-67</p>
+                <p>📍 Україна, Одеса</p>
+                <p>🕘 Щодня, 09:00–21:00</p>
+            </div>
+            <div class="mf-col">
+                <h4>Як допомогти</h4>
+                <ul>
+                    <li>Задонатити на відкритий збір</li>
+                    <li>Передати допомогу особисто</li>
+                    <li>Стати волонтером</li>
+                    <li>Поширити збір у соцмережах</li>
+                </ul>
+            </div>
+            <div class="mf-col">
+                <h4>Реквізити та звіти</h4>
+                <p>Банка: посилання буде тут</p>
+                <p>IBAN: UA00 0000 0000 0000 0000 0000 00000</p>
+                <p>Звіти по кожному збору — у Telegram.</p>
+                <div class="mf-social">
+                    <a href="#" class="telegram">Telegram</a>
+                    <a href="#" class="instagram">Instagram</a>
+                    <a href="#" class="facebook">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="mf-bottom">© 2026 Волонтерство в Україні · Усі збори підтверджуються чеками, накладними та фотозвітами</div>
+    </div>
+</footer>
 
 </body>
 </html>

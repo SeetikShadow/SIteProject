@@ -1,0 +1,13 @@
+.side-image {
+    --pw: min(465px, calc((100vw - 950px) / 2 - 30px));
+    width: var(--pw);
+    height: calc(var(--pw) * 2.013);
+}
+.left-side-img  { left:  calc(-1 * var(--pw) - 10px); }
+.right-side-img { right: calc(-1 * var(--pw) - 10px); }
+@media screen and (max-width: 1880px) {
+    .side-image { display: block; }
+}
+@media screen and (max-width: 1250px) {
+    .side-image { display: none; }
+}
